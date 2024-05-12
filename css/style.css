@@ -1,7 +1,32 @@
-.container {
-	width: 1165px;
-	margin: 0 auto;
+body {
+	background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/advancelocal/BJOWCBC42VA53DAF7C7T4THCVM.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 }
-h3 {
-	color: hotpink;
+.sun {
+	width: 220px;
+	height:220px;
+	transform: translate(290%, 100%);
+}
+.earth {
+	width:150px;
+	height: 150px;
+	position: relative;
+	animation: mymove 10s infinite;
+}
+@keyframes mymove {
+	0% {top:0px; left:0px;}
+	25% {top:0px; left:700px;}
+	50% {top:400px; left:700px;}
+	75% {top:400px; left:0px;}
+	100% {top:0px; left:0px;}
+}
+.saturn {
+	width: 150px;
+	height: 150px;
+	transition:3s ease-in-out;
+}
+.saturn:hover {
+	rotate: 360deg;
 }
